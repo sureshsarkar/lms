@@ -327,7 +327,6 @@ $(document).ready(function() {
 <!-- script to delete multiple -->
 <script>
 jQuery(document).ready(function() {
-
     $(".deletByCheck").attr('disabled', 'disabled');
     jQuery(document).on("click", ".checkbox", function() {
         var da = $("input:checkbox[name=checkbox]:checked");
@@ -371,9 +370,7 @@ jQuery(document).ready(function() {
 
 <script type="text/javascript">
 function delsingleRow(id)
-
 {
-
     var confrm = confirm("Are you sure you want to delete?");
 
     if (confrm)

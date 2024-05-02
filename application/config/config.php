@@ -374,7 +374,10 @@ $config['time_zone'] = 'Asia/Kolkata';
 $config['proxy_ips'] = '';
 $config['waterMarkText']  = 'Preview';
 
-
+$config['comp_name'] = 'SUPER ADMIN';
+$config['comp_email'] = 'admin@techcentrica.com';
+$config['comp_phone'] = '9599200269';
+$config['comp_pass'] = '123456';
 
 // SMTP
 $config['SMTP_ACTIVE'] = 'YES'; // YES or NO (YES : send mail , NO : to stop mail service)
@@ -387,8 +390,6 @@ $config['TEST_MAIL'] = 'mishragkmishra@gmail.com';
 
 $config['support_no'] = '+1-844-889-2537';
 $config['admin_email_id'] = 'write2nmakkar@gmail.com';
-
-
 
 // types
 

@@ -886,7 +886,8 @@ th {
                             borderColor: '#dff9fb',
                             row: {
                                 colors: ['#95afc0',
-                                'transparent'], // takes an array which will be repeated on columns
+                                    'transparent'
+                                ], // takes an array which will be repeated on columns
                                 opacity: 0.5
                             },
                         },

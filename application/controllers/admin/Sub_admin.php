@@ -331,7 +331,7 @@ class Sub_admin extends BaseController
             $seconds = (isset($seconds) && $seconds !=0)?$seconds.' second':'';
 
             $last_activity = '<span class="bg-inverse-success"><br>last activity:'.$years.' '.$months.' '.$days.' '.$hours.' '.$minutes.' ago</span>';
-            
+             
             $no++;
             $row = [];
             $row[] = $no;

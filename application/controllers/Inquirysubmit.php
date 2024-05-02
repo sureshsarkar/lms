@@ -132,8 +132,7 @@ class Inquirysubmit extends BaseController
         $getMenu['table']  = 'category';
         $getMenu['id']     = '-id'; // Desc when - add
         $getMenu['limit']     = '20'; // Desc when - add
-        $data['categoryMenu']      = $this->getCategory($getMenu); 
-        
+        $data['categoryMenu']      = $this->getCategory($getMenu);
 
         $this->form_validation->set_rules('name2', 'Name ', 'required');
         $this->form_validation->set_rules('cnum', 'Phone ', 'required');

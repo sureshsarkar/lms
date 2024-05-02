@@ -156,7 +156,6 @@ class Enquery extends BaseController
     // Edit
     function edit($id)
     {
-
         if (isset($id) and !empty($id)) {
             $data = null;
             $this->enquery->save(array('id'=> $id,'seen'=>1));

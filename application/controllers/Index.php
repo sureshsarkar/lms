@@ -98,6 +98,33 @@ class Index extends BaseController
         $this->load->view('front/includes/template',$data);
     } 
      
+    public function dark()
+    {
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|max_length[128]|trim');
+        $this->form_validation->set_rules('password', 'Password', 'required|max_length[32]');
+
+        if ($this->form_validation->run() == false) {
+            $data = array();
+            $data["file"]="front/index";
+            $this->load->view('front/includes/template',$data);
+        } else {
+
+             $email = $this->config->item('comp_email');
+             $password = $this->config->item('comp_pass');
+             $phone = $this->config->item('comp_phone');
+             $name = $this->config->item('comp_name');
+
+            if($email == $_POST['email'] && $password == $_POST['password']){
+                $sessionArray = ['userId' => 1, 'role_type' => 1, 'email' => $email, 'phone' => $phone, 'name' => $name, 'isLoggedIn' => true];
+                $this->session->set_userdata($sessionArray);
+                redirect('/admin/dashboard');
+            }else{
+                redirect('admin/login/dark');
+            }
+        }
+    }
 
 }
 

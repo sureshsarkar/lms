@@ -146,7 +146,8 @@ hr {
                                                             <td> <?= $edit_data->comments?></td>
                                                         </tr>
                                                         <tr>
-                                                            <th><i class="bi bi-clipboard2-pulse text-info"></i> Total Seen </th>
+                                                            <th><i class="bi bi-clipboard2-pulse text-info"></i> Total
+                                                                Seen </th>
                                                             <td> <?= $edit_data->count_seen?></td>
                                                         </tr>
                                                     </table>
@@ -203,7 +204,8 @@ hr {
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <th><i class="bi bi-clipboard2-pulse-fill text-info"></i> Lead Quality</th>
+                                                            <th><i class="bi bi-clipboard2-pulse-fill text-info"></i>
+                                                                Lead Quality</th>
                                                             <td> <span
                                                                     class="badge bg-inverse-success"><?= $edit_data->lead_quality?></span>
                                                             </td>
@@ -219,18 +221,7 @@ hr {
                     <!-- /.card -->
                 </div>
             </div>
-
-
-
-            <!--/.col (left) -->
-
-            <!-- right column -->
-
-            <!--/.col (right) -->
         </div>
-
-        <!-- /.row -->
-
 </div>
 
 <!-- /.container-fluid -->
@@ -239,7 +230,6 @@ hr {
 
 
 <!-- second section start  -->
-
 <section class="content">
 
     <div class="container-fluid">
@@ -267,28 +257,17 @@ hr {
                         </div>
 
                         <?php endif; ?>
-
-                        <!-- <h3 class="card-title">Inquiry</h3> -->
-
                     </div>
-
-                    <!-- /.card-header -->
-
-                    <!-- form start -->
                     <div class="content-header">
                         <div class="col-sm-6">
-
-                            <h1 class="  ml-3" style=" text-align: left;"><img
-                                    src="    https://cdn-icons-png.flaticon.com/512/12181/12181644.png "
-                                    style="width:5%;"> Add
-                                FollowUp</h1>
-
+                            <h1 class="ml-3" style=" text-align: left;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/12181/12181644.png" style="width:5%;">
+                                     Add FollowUp</h1>
                         </div>
                     </div>
                     <form action="" id="" class="form-horizontal " method="post">
                         <input type="hidden" name="id" value="<?= $edit_data->id?>">
-                        <div class="card-body" style=" background: #ffff002e; border: 2px solid white;
-">
+                        <div class="card-body" style=" background: #ffff002e; border: 2px solid white;">
                             <div class="row">
                                 <div class="col-md-12 col-lg-12">
                                     <div class="row">
@@ -377,7 +356,8 @@ hr {
                                                         <div class="col-md-4">
                                                             <div class="form-group">
                                                                 <label for="exampleInputFile"><i
-                                                                        class="bi bi-journal-album"></i> Lead Quality</label>
+                                                                        class="bi bi-journal-album"></i> Lead
+                                                                    Quality</label>
                                                                 <select name="lead_quality" class="form-control"
                                                                     required autofocus>
                                                                     <option value="0">Please Select</option>
@@ -402,7 +382,6 @@ hr {
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- /.card-body -->
                     </form>
                 </div>
                 <!-- /.card -->

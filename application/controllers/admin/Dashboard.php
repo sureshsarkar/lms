@@ -28,27 +28,12 @@ class Dashboard extends BaseController
 		$this->isLoggedIn();
 	}
 
-    
 
 	function index()
 	{
 
-
-     
         $this->load->model('admin/enquery_model','enquery');
 
-        	 // check login
-             $w = array();
-            //  $w['id'] = $_SESSION['userId'];
-             $w['status'] = 1;
-             $w['table'] = "sub_admin";
- 
-             $res = $this->enquery->findDynamic($w);
- 
-             if(empty($res)){
-                session_unset();
-                redirect("admin/login");
-             }
 
         $data['totalEnquery'] = $this->enquery->countRow();
 
