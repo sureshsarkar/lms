@@ -28,12 +28,10 @@ class Dashboard extends BaseController
 		$this->isLoggedIn();
 	}
 
-
 	function index()
 	{
 
         $this->load->model('admin/enquery_model','enquery');
-
 
         $data['totalEnquery'] = $this->enquery->countRow();
 
